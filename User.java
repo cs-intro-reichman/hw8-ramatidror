@@ -16,6 +16,20 @@ public class User {
         fCount = 0;                      // initial number of followees
     }
 
+    public static String formatName (String name) {
+        String updatedName = "";
+
+        if (name == null || name.isEmpty()) {
+            return name;
+        }
+        else if (name.charAt(0) >= 'a' && name.charAt(0) <= 'z') {
+            updatedName += (char) (name.charAt(0) - 32);
+            updatedName += name.substring(1);
+            return updatedName;
+        }
+        else return name;
+    }
+
     /** Creates a user with some followees. The only purpose of this constructor is 
      *  to allow testing the toString and follows methods, before implementing other methods. */
     public User(String name, boolean gettingStarted) {
@@ -44,7 +58,7 @@ public class User {
     /** If this user follows the given name, returns true; otherwise returns false. */
     public boolean follows(String name) {
         for (int i = 0; i < this.fCount; i ++) {
-            if (this.follows[i].equals(name)) {
+            if (this.follows[i].equals(formatName(name))) {
                 return true;
             }
         }
@@ -54,18 +68,12 @@ public class User {
      *  If this user already follows the given name, or if the follows list is full, does nothing and returns false; */
     public boolean addFollowee(String name) {
 
-        if (this.fCount >= maxfCount) {return false;}
-
-        boolean nameExists = false;
-        for (int i = 0; i < this.fCount; i++) {
-            if (this.follows[i].equals(name)) {
-                nameExists = true;
-                break;
-            }
-        }
+        String updatedName = formatName(name);
+        boolean nameExists = follows (updatedName);
+        if ((this.fCount >= maxfCount) || nameExists) {return false;}
 
         if (this.fCount < 10 && !nameExists) {
-            follows[this.fCount] = name;
+            follows[this.fCount] = updatedName;
             System.out.println("\n...Adding " + name + " to the follows list of " + this.name + "...");
             this.fCount++;
             return true;
