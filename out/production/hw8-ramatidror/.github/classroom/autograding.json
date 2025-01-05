@@ -1,0 +1,114 @@
+{
+  "tests": [
+    {
+      "name": "User class, USER_FOLLOWS test",
+      "setup": "javac Test.java",
+      "run": "java Test USER_FOLLOWS",
+      "comparison": "included",
+      "input": "",
+      "output": "All test cases have passed",
+      "timeout": 10,
+      "points": 8
+    },
+    {
+      "name": "User class, USER_ADD_FOLLOWEE test",
+      "setup": "javac Test.java",
+      "run": "java Test USER_ADD_FOLLOWEE",
+      "comparison": "included",
+      "input": "",
+      "output": "All test cases have passed",
+      "timeout": 10,
+      "points": 8
+    },
+    {
+      "name": "User class, USER_REMOVE_FOLLOWEE test",
+      "setup": "javac Test.java",
+      "run": "java Test USER_REMOVE_FOLLOWEE",
+      "comparison": "included",
+      "input": "",
+      "output": "All test cases have passed",
+      "timeout": 10,
+      "points": 8
+    },
+    {
+      "name": "User class, USER_COUNT_MUTUAL test",
+      "setup": "javac Test.java",
+      "run": "java Test USER_COUNT_MUTUAL",
+      "comparison": "included",
+      "input": "",
+      "output": "All test cases have passed",
+      "timeout": 10,
+      "points": 8
+    },
+    {
+      "name": "User class, USER_IS_FRIEND_OF test",
+      "setup": "javac Test.java",
+      "run": "java Test USER_IS_FRIEND_OF",
+      "comparison": "included",
+      "input": "",
+      "output": "All test cases have passed",
+      "timeout": 10,
+      "points": 8
+    },
+    {
+      "name": "Network class, NETWORK_GET_USER test",
+      "setup": "javac Test.java",
+      "run": "java Test NETWORK_GET_USER",
+      "comparison": "included",
+      "input": "",
+      "output": "All test cases have passed",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Network class, NETWORK_ADD_USER test",
+      "setup": "javac Test.java",
+      "run": "java Test NETWORK_ADD_USER",
+      "comparison": "included",
+      "input": "",
+      "output": "All test cases have passed",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Network class, NETWORK_ADD_FOLLOWEE test",
+      "setup": "javac Test.java",
+      "run": "java Test NETWORK_ADD_FOLLOWEE",
+      "comparison": "included",
+      "input": "",
+      "output": "All test cases have passed",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Network class, NETWORK_RECOMMEND_WHO_TO_FOLLOW test",
+      "setup": "javac Test.java",
+      "run": "java Test NETWORK_RECOMMEND_WHO_TO_FOLLOW",
+      "comparison": "included",
+      "input": "",
+      "output": "All test cases have passed",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Network class, NETWORK_MOST_POPULAR_USER test",
+      "setup": "javac Test.java",
+      "run": "java Test NETWORK_MOST_POPULAR_USER",
+      "comparison": "included",
+      "input": "",
+      "output": "All test cases have passed",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Network class, NETWORK_TO_STRING test",
+      "setup": "javac Test.java",
+      "run": "java Test NETWORK_TO_STRING",
+      "comparison": "included",
+      "input": "",
+      "output": "All test cases have passed",
+      "timeout": 10,
+      "points": 8
+    }
+  ]
+}
